@@ -83,7 +83,6 @@ $result = $this->$mongoDbClient->fetchAll('fans', $where);
 ```php
 $list = $this->$mongoDbClient->fetchPagination('article', 10, 0, ['author' => $author]);
 ```
-```
 
 ### 更新
 ```php
