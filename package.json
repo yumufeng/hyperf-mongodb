@@ -1,0 +1,38 @@
+{
+  "name": "yumufeng/hyperf-mongodb",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "yumufeng",
+      "email": "admin@yumufeng.com"
+    }
+  ],
+  "dependencies": {
+
+  },
+  "require": {
+    "php": ">=7.2",
+    "ext-swoole": ">=4.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Hyperf\\Mongodb\\": "src/"
+    },
+    "files": [
+    ]
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    },
+    "hyperf": {
+      "config": "Hyperf\\Mongodb\\ConfigProvider"
+    }
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://mirrors.aliyun.com/composer"
+    }
+  }
+}
