@@ -24,6 +24,14 @@
     "files": [
     ]
   },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    },
+    "hyperf": {
+      "config": "Hyperf\\Mongodb\\ConfigProvider"
+    }
+  },
   "repositories": {
     "packagist": {
       "type": "composer",
