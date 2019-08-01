@@ -1,4 +1,4 @@
-# swoft mongo db pool
+# hyperf mongodb pool
 
 ```
 composer require yumufeng/hyperf-mongodb
