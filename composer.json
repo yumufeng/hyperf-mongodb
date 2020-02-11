@@ -1,6 +1,6 @@
 {
   "name": "yumufeng/hyperf-mongodb",
-  "version": "1.0.0",
+  "license": "Apache-2.0",
   "authors": [
     {
       "name": "yumufeng",
@@ -14,28 +14,16 @@
     "hyperf/contract": "~1.0.0",
     "hyperf/utils": "~1.0.0"
   },
-  "require-dev": {
-    "hyperf/di": "~1.0.0"
-  },
   "autoload": {
+    "classmap": [
+    ],
     "psr-4": {
-      "Hyperf\\Mongodb\\": "src/"
-    },
-    "files": [
-    ]
-  },
-  "extra": {
-    "branch-alias": {
-      "dev-master": "1.0-dev"
-    },
-    "hyperf": {
-      "config": "Hyperf\\Mongodb\\ConfigProvider"
+      "Hyperf\\Mongodb\\": "src"
     }
   },
-  "repositories": {
-    "packagist": {
-      "type": "composer",
-      "url": "https://mirrors.aliyun.com/composer"
+  "extra": {
+    "hyperf": {
+      "config": "Hyperf\\Mongodb\\ConfigProvider"
     }
   }
 }
