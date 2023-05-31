@@ -377,10 +377,13 @@ class MongoDbConnection extends Connection implements ConnectionInterface
     public function count(string $namespace, array $filter = [])
     {
         try {
-            $command = new Command([
-                'count' => $namespace,
-                'query' => $filter
-            ]);
+            $commandParam = [
+                'count' => $namespace
+            ];
+            if (!empty($filter)) {
+                $commandParam['query'] = $filter;
+            }
+            $command = new Command($commandParam);
             $cursor = $this->connection->executeCommand($this->config['db'], $command);
             $count = $cursor->toArray()[0]->n;
             return $count;
